@@ -61,6 +61,14 @@ The app runs with the `dev` profile by default, and its settings are in `src/mai
 
 The app runs on port **8080** by default.
 
+## Testing
+
+Run the suite with `./gradlew test`. Current coverage:
+
+- **`JwtServiceTest`** — token generation, subject/claim extraction, and validity checks against matching/mismatched users.
+- **`UserInsertValidatorTest`** — registration validation, including the duplicate-username rejection path.
+- **`EduAppApplicationTests`** — Spring context load smoke test.
+
 ## API Overview
 
 Base path: `/api/v1`
